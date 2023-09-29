@@ -16,7 +16,7 @@ pipeline {
 
   options {
 
-    buildDiscarder(logRotator(numToKeepStr: "10", artifactNumToKeepStr: "10"))
+    buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
 
     timestamps()
 
@@ -28,7 +28,7 @@ pipeline {
 
       steps {
 
-        sh "ping mail.ru/"
+        sh 'ping mail.ru/'
 
       }
 
@@ -38,7 +38,7 @@ pipeline {
 
       steps {
 
-        sh "ping https://mtkp.bmstu.ru/"
+        sh 'ping https://mtkp.bmstu.ru/'
 
       }
 
