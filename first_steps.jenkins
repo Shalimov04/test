@@ -28,7 +28,7 @@ pipeline {
 
       steps {
 
-        sh 'ping mail.ru/'
+        powershell 'ping mail.ru/'
 
       }
 
@@ -38,7 +38,7 @@ pipeline {
 
       steps {
 
-        sh 'ping https://mtkp.bmstu.ru/'
+        powershell 'ping https://mtkp.bmstu.ru/'
 
       }
 
